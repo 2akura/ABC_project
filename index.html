@@ -2,21 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fun Cup Rahmah</title>
   <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
     body {
       font-family: 'Comic Sans MS', cursive, sans-serif;
       background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      padding: 50px;
+      padding: 20px;
+      box-sizing: border-box;
     }
     h1 {
       font-size: 3em;
       color: #ff4081;
     }
     .fun-btn {
-      font-family: 'Comic Sans MS', cursive, sans-serif;
       background-color: #00bcd4;
       color: white;
       padding: 15px 30px;
@@ -29,17 +37,31 @@
     .fun-btn:hover {
       background-color: #0097a7;
     }
+    @media (max-width: 600px) {
+    body {
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .fun-btn {
+      padding: 10px 20px;
+      font-size: 1em;
+    }
+
+    img {
+      max-width: 200px;
+    }
+  }
   </style>
 </head>
 <body>
 
-  <h1>Fun Cup Rahmah! </h1>
-  <p>go custom your ABC or Ais Kepal 🍧!</p>
+  <h1>Welcome to Fun Cup Rahmah! 🍧</h1>
+  <p>Cool treats built your way. Let’s build your cup of happiness!</p>
 
-  <!-- You can add illustrations or animations here -->
   <img src="https://undraw.co/api/illustrations/15b05b0e-6423-4561-8d42-dcda622f69b4" alt="Ice fun" style="max-width: 300px; margin: 20px 0;">
 
-  <br>
   <a href="order.html"><button class="fun-btn">Start Building →</button></a>
 
 </body>
